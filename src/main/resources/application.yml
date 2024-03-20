@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: demo
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 319771396323-5cko46au2pore2dk6chrmnuj3sr1alfj.apps.googleusercontent.com
+            clientSecret: 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
+  datasource:
+    url: jdbc:postgresql://localhost:5432/loma?UseUnicode=true&characterEncoding=utf8&sessionVariables=sql_mode=''
+    password: root
+    username: postgres
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
